@@ -19,7 +19,7 @@ def meals
  end
 #########
  def waiters
-   Waiter.all.map {|waiter|waiter.customer == self}
+   Waiter.all.collect {|waiter|waiter.customer == self}
  end
 ########
 end
